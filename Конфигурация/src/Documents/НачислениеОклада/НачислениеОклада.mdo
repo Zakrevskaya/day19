@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b4f51fd2-2b75-4a6f-8dd4-113733c28213">
+  <producedTypes>
+    <objectType typeId="954ba5a8-6574-46b4-8e1f-a16200d314da" valueTypeId="6e2f697b-8625-4668-995f-b9cc856ee55b"/>
+    <refType typeId="1296d20e-eb24-4688-8bf7-d0041bf5ab30" valueTypeId="65d87e86-6ef9-4b5e-a709-164a346736da"/>
+    <selectionType typeId="1f0ea019-b2ce-443e-9c77-17ef59c0cc8f" valueTypeId="b7ec4e5e-d1b9-4140-9756-a4ae680b2ee1"/>
+    <listType typeId="aabd8ebc-f337-42d5-a406-036f504f50e8" valueTypeId="35627662-becb-4579-9c63-163efac0d0c7"/>
+    <managerType typeId="c80f1cce-d12c-4d87-bffd-63318166d1c5" valueTypeId="e2522539-5aa8-46f5-8713-4f572cc64185"/>
+  </producedTypes>
+  <name>НачислениеОклада</name>
+  <synonym>
+    <key>ru</key>
+    <value>Начисление оклада</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.НачислениеОклада.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <registerRecords>CalculationRegister.РегистрНачисленияЗарплаты</registerRecords>
+  <registerRecords>AccumulationRegister.ЗадолженностьПередСотрудниками</registerRecords>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="ff0aa384-d806-46b1-8829-731e8ffd195b">
+    <name>Сотрудник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сотрудник</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Сотрудники</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="e997a8b0-be7e-44cd-b578-6b913a5cf839">
+    <name>ДневнойТариф</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дневной тариф</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Document>

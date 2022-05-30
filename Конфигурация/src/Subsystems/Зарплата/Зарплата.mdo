@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b2fbd1cb-7aba-4e00-b4f5-7e77f5320ba3">
+  <name>Зарплата</name>
+  <synonym>
+    <key>ru</key>
+    <value>Зарплата</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>ChartOfCalculationTypes.Начисления</content>
+  <content>Document.ЗаполнениеГрафикаПредприятия</content>
+  <content>InformationRegister.ГрафикПредприятия</content>
+  <content>CalculationRegister.РегистрНачисленияЗарплаты</content>
+  <content>Document.НевыходСотрудника</content>
+  <content>Document.НачислениеОклада</content>
+  <content>Document.НачислениеПремий</content>
+  <content>AccumulationRegister.ЗадолженностьПередСотрудниками</content>
+  <content>Document.ВыплатаЗаработнойПлаты</content>
+  <content>Report.ЗадолженностьПередСотрудниками</content>
+</mdclass:Subsystem>
